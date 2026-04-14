@@ -5,3 +5,10 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.active{
+    box-shadow: 0 0 2px #23be0a;
+    color: #23be0a;
+    background: transparent;
+    outline: 2px soild #23be0a;
+}

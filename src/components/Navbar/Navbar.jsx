@@ -1,5 +1,5 @@
 import React from "react";
-
+import {NavLink} from 'react-router';
 const Navbar = () => {
   return (
     <div className="bg-base-100 shadow-sm">
@@ -28,13 +28,13 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Home</a>
+                <NavLink to='/'>Home</NavLink>
               </li>
               <li>
-                <a>Listed Books</a>
+                <NavLink to='/books'>Listed Books</NavLink>
               </li>
               <li>
-                <a>Pages to Read</a>
+                <NavLink to='/bok'>Pages to Read</NavLink>
               </li>
             </ul>
           </div>
@@ -43,19 +43,19 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>Listed Books</a>
-            </li>
-            <li>
-              <a>Pages to Read</a>
-            </li>
+                <NavLink to='/'>Home</NavLink>
+              </li>
+              <li>
+                <NavLink to='/books'>Listed Books</NavLink>
+              </li>
+              <li>
+                <NavLink to='/bok'>Pages to Read</NavLink>
+              </li>
           </ul>
         </div>
         <div className="navbar-end gap-4">
-          <a className="btn btn-success">Sign In</a>
-          <a className="btn btn-accent "> Sign Up</a>
+          <a className="btn bg-[#23BE0A] text-white">Sign In</a>
+          <a className="btn bg-[#59C6D2] text-white"> Sign Up</a>
         </div>
       </div>
     </div>
