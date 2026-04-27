@@ -2,8 +2,8 @@ import React from "react";
 import {NavLink} from 'react-router';
 const Navbar = () => {
   return (
-    <div className="bg-base-100 shadow-sm">
-      <div className=" navbar max-mA">
+    <div className="bg-base-100 shadow-sm flex w-full justify-center fixed top-0 z-10 ">
+      <div className=" navbar max-mA ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
